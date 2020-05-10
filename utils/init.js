@@ -6,7 +6,7 @@ const unhandledError = require('cli-handle-unhandled');
 module.exports = async () => {
 	unhandledError();
 	checkNode(`10`);
-	welcome(`ramadan-cli`, `by Awais.dev\n${pkgJSON.description}`, {
+	welcome(`multitenant-migration-cli`, `by Junaid Ahmad\n${pkgJSON.description}`, {
 		bgColor: `#81EF96`,
 		color: `#FFFFFF`,
 		bold: true,

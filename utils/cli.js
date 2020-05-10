@@ -8,29 +8,37 @@ const dim = chalk.dim;
 module.exports = meow(
 	`
 	Usage
-	  ${green(`ramadan-cli`)} ${cyan(`<command>`)} ${yellow(`[--option]`)}
+	  ${green(`node .\\index.js`)} ${cyan(`<command>`)} ${yellow(`[--option]`)}
 
 	Commands
-	  ${cyan(`cityName`)}    Get data for a city
+	  ${cyan(`run`)}         Run the Sequelize command provided in the option
 	  ${cyan(`help`)}        Show help
 
 	Options
-	  ${yellow(`--all`)}, ${yellow(`-a`)}   Show all days
+		${yellow(`--db`)}, ${yellow(`--d`)}   	To specify the database from where we need to load tenant information. Supported values test,
+				development or production as defined in the config/config.js
+	  ${yellow(`--command`)}, ${yellow(`--c`)}      To specify the sequelize command to run. For now, supported value are 'db:migrate'
 
 	Examples
-	${green(`ramadan-cli`)} ${cyan(`lahore`)}
-	${green(`ramadan-cli`)} ${cyan(`karachi`)} ${yellow(`--all`)}
-	${green(`ramadan-cli`)} ${cyan(`help`)}
+	${green(`node .\\index.js`)} ${cyan(`run`)} ${yellow(`--db 'development'`)} ${yellow(`--command 'db:migrate'`)}
+	${green(`node .\\index.js`)} ${cyan(`help`)}
 `,
 	{
 		booleanDefault: undefined,
 		hardRejection: false,
 		inferType: false,
 		flags: {
-			all: {
-				type: 'boolean',
-				default: false,
-				alias: 'a'
+			db: {
+				type: 'string',
+				default: '',
+				isRequired: true,
+				alias: 'd'
+			},
+			command: {
+				type: 'string',
+				default: '',
+				isRequired: true,
+				alias: 'c'
 			}
 		}
 	}
