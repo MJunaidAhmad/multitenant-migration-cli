@@ -1,15 +1,15 @@
 <h4 align="center">
 
-# Problem Statement
+## Problem Statement
 
 When running a multi-tenant application i.e. one one databse per tenant, it is hard to manage database structure of each tenant database seperately.
 Altough Sequelize provide us with a great option of migrations & seeders but it does not support the multi-tenant option out the box because every system can have a different approach to implement multi-tenancy.
 
-# Solution
+## Solution
 
 This package is a cli base wrapper written on the top of the sequelize cli.
 
-# Supported Usecase
+## Supported Usecase
 
 Following use case are supported for now:
 1. You need to have a master database where we need a table named as "tenants" with the following columns: username, password, db, host.
@@ -22,7 +22,7 @@ Following use case are supported for now:
 
 <br>
 
-# migration-cli
+## migration-cli
 
 - 🚀 Supports sequelize commands out of the box
 - 🤯 Supports mysql, Postgres, Microsoft SQL Server, Sqlite, mariadb
@@ -113,3 +113,6 @@ Feel free to create an issue if you have something in your mind related to this 
     <p><a href="https://twitter.com/MrAhmadAwais/"><img alt="Twitter @junaidahnmad_12" align="center" src="https://img.shields.io/badge/TWITTER-gray.svg?colorB=1da1f2&colorA=1da1f2&style=flat" /></a>&nbsp;<small><strong>(follow)</strong></small></p>
     <p><a href="https://www.linkedin.com/in/junaidahmad-/"><img alt="LinkedIn @JunaidAhmad" align="center" src="https://img.shields.io/badge/LINKEDIN-gray.svg?colorB=0077b5&colorA=0077b5&style=flat" /></a>&nbsp;<small><strong>(connect)</strong> On the LinkedIn profile y'all</small></p>
 </div>
+
+### Tags
+Multi-tenant Multitenant Multi-tenancy Multitenancy Nodejs Multi-tenancy with sequelize & Nodejs Migrations for Multitenant System
