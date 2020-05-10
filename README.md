@@ -73,6 +73,7 @@ But in a real world scenario you may want to create a migration first using sequ
 ```
 
 <br>
+
 ## Changelog
 
 Soon to be updated!
@@ -92,7 +93,8 @@ Soon to be updated!
 Feel free to create an issue if you have something in your mind related to this package.
 
 <br>
-##  License & Conduct
+
+## License & Conduct
 
 - MIT © [Junaid Ahmad](https://twitter.com/junaidahmad_12/)
 - [Code of Conduct](code-of-conduct.md)
