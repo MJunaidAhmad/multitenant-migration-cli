@@ -2,7 +2,7 @@
 
 ## Problem Statement
 
-When running a multi-tenant application i.e. one one databse per tenant, it is hard to manage database structure of each tenant database seperately.
+When running a multi-tenant application i.e. one databse per tenant, it is hard to manage database structure of each tenant database seperately.
 Altough Sequelize provide us with a great option of migrations & seeders but it does not support the multi-tenant option out the box because every system can have a different approach to implement multi-tenancy.
 
 ## Solution
