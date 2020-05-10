@@ -17,7 +17,13 @@ module.exports = meow(
 	Options
 		${yellow(`--db`)}, ${yellow(`--d`)}   	To specify the database from where we need to load tenant information. Supported values test,
 				development or production as defined in the config/config.js
-	  ${yellow(`--command`)}, ${yellow(`--c`)}      To specify the sequelize command to run. For now, supported value are 'db:migrate'
+		${yellow(`--command`)}, ${yellow(`--c`)}  To specify the sequelize command to run. For now, supported value are:
+				'db:migrate'
+				'db: migrate: undo'
+				'db: migrate: undo: all'
+				'db: seed: all'
+				'db: seed: undo'
+				'db: seed: undo: all'
 
 	Examples
 	${green(`node .\\index.js`)} ${cyan(`run`)} ${yellow(`--db 'development'`)} ${yellow(`--command 'db:migrate'`)}
