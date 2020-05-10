@@ -62,7 +62,9 @@ node index.js help
 
 ## Examples
     node index.js run --db 'development' --command 'db:migrate'
-    But in a real world scenario you may want to create a migration first using sequelize-cli e.g. sequelize migration:create --name 	     sometablename
+	 
+But in a real world scenario you may want to create a migration first using sequelize-cli e.g. sequelize migration:create --name sometablename
+  
 #### CLI Help
 
 ```sh
@@ -90,7 +92,7 @@ Soon to be updated!
 Feel free to create an issue if you have something in your mind related to this package.
 
 <br>
-## License & Conduct
+##  License & Conduct
 
 - MIT © [Junaid Ahmad](https://twitter.com/junaidahmad_12/)
 - [Code of Conduct](code-of-conduct.md)
