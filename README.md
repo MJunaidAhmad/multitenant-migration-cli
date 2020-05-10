@@ -41,6 +41,9 @@ node index.js help
 ```
 <br>
 
+## sequelize connection setup
+You can define your master database connection settings in config/config.json file.
+
 
 ## Usage
     node index.js <command> [--option]
