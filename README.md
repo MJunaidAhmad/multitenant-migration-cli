@@ -36,6 +36,12 @@ Following use case are supported for now:
 # Clone this repo:
 git clone https://github.com/MJunaidAhmad/multitenant-migration-cli.git
 
+# cd to the clonned repo folder:
+cd multitenant-migration-cli-master
+
+# Install npm modules:
+npm install
+
 # Run this command in the clonned folder:
 node index.js help
 ```
