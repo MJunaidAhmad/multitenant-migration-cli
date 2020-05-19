@@ -72,7 +72,7 @@ You can define your master database connection settings in config/config.json fi
 ## Examples
     node index.js run --db 'development' --command 'db:migrate'
 	 
-But in a real world scenario you may want to create a migration first using sequelize-cli e.g. sequelize migration:create --name sometablename
+But in a real world scenario you may want to create a migration first using sequelize-cli e.g. ```sequelize migration:create --name sometablename```
   
 #### CLI Help
 
