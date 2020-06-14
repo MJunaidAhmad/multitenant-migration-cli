@@ -62,7 +62,7 @@ You can define your master database connection settings in config/config.json fi
         --db, --d       To specify the database from where we need to load tenant information. Supported values test,
                         development or production as defined in the config/config.js
     --command, --c      To specify the sequelize command to run. For now, supported value are:
-    		'db:migrate'
+    		    'db:migrate'
                         'db: migrate: undo'
                         'db: migrate: undo: all'
                         'db: seed: all'
